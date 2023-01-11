@@ -1,0 +1,32 @@
+<html>
+    <head>
+        
+     {% load static %}
+        <link rel ="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+       </head>
+
+<body>
+<div class="row">
+    <div  class="col-12">
+        <div class="m-2">
+            <div class="p-3">
+              <form method="POST">
+                 {% csrf_token %}
+                 <label for="fname">Name</label>
+                 <input name="name" type="text" class="form-control">
+                 <label for="exampleInputEmail">Email</label>
+                 <input name="email" type="email" id="exampleInputEmail" class="form-control" >
+                 <label for="message"> Message </label>
+                 <textarea name="message" id="message" cols="30" rows="10" class="form-control">
+
+                 </textarea>
+                 <input type="submit" class="btn btn-success btn-lg mt-1 m1-4">
+               </form>
+            </div>
+        </div>
+      
+    </div>
+</div>
+</body>
+   
+</html>

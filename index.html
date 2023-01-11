@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    {% load static %}
+ 
+    <link rel ="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    
+     <link rel ="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+   
+
+<body>
+    <nav class='navbar navbar-expand-lg  '>
+        <div class="navbar-nav">
+        <a style="color:rgb(255, 136, 0);font-weight:800;" class="nav-item nav-link"href="{% url 'about' %}">Home</a>
+        <a style="color:rgb(255, 102, 0);font-weight:800;" class="nav-item nav-link"href="{% url 'image' %}">images</a>
+        <a style="color:rgb(255, 94, 0);font-weight:800;" class="nav-item nav-link"href="{% url 'contact' %}">contact</a> 
+          
+ 
+    
+        </div>
+    </nav>
+    
+
+</body>
+</html>
